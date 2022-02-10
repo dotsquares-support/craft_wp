@@ -30,9 +30,10 @@ Whatsapp chat is a free Craft CMS Plugin which allows you to integrate Whatsapp 
 
 ## Configuring Whatsapp
 
-- Go to Settings>Plugins-> Whatsapp  Enable Plugi and enter your business whatsapp number with country code set other sttings accordingly now you are good to go.
+- Go to Settings>Plugins-> Whatsapp  Enable Plugin and enter your business whatsapp number with country code set other sttings accordingly now you are good to go.
 
-## Facebook Feed Roadmap
+## Whatsapp
+Roadmap
 
 Some things to do, and ideas for potential features:
 
