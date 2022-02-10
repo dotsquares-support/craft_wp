@@ -1,0 +1,71 @@
+{#
+/**
+ * Whatsapp Chat plugin for Craft CMS 3.x
+ *
+ *
+ * @author    Dotsquares
+ * @copyright Copyright (c) 2022 Dotsquares
+ * @link      https://www.dotsquares.com/
+ 
+ */
+ #}
+
+{% import "_includes/forms" as forms %}
+
+
+
+{{ forms.lightswitchField({
+    first: true,
+    label: 'Enable'|t('whatsapp'),
+    instructions: 'Enable WhatsApp Chat'|t('whatsapp'),
+    id: 'enable',
+    name: 'enable',
+    value: 1,
+    on: settings.enable,
+}) }}
+
+
+
+
+{{ forms.autosuggestField({
+    label: "WhatsApp Number"|t('whatsapp'),
+    id: 'Whatsapp',
+    name: 'Whatsapp',
+    value: settings.Whatsapp,
+    type: 'number',
+    placeholder: '+9198XXXXXXXX',
+    required: true
+}) }}
+
+<p>{{ "Phone Number with Country Code eg: +9198xxxxxxxx." |t('whatsapp')}}</p>
+
+
+
+
+{{ forms.autosuggestField({
+     label: "Message"|t('whatsapp'),
+    id: 'Message',
+    name: 'Message',
+    value: settings.Message,
+    placeholder: 'Hello, there I would like to know more.',
+    required: false
+}) }}
+
+<p>{{ "Prefilled message that will appear on chat." |t('whatsapp')}}</p>
+
+
+
+{{ forms.selectField({
+    options :[
+     {optgroup:'direction'},
+     {label : 'left', value: 'left'},
+     {label : 'right', value: 'right'},
+    
+     
+    ],
+    name: 'location',
+    value : settings.location,
+  label: "Select the position of Whatsapp"|t('whatsapp'),
+
+})}}
+

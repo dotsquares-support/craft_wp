@@ -1,0 +1,40 @@
+{
+  "name": "ds/craft-whatsapp",
+  "description": "A plugin for Craft CMS that helps you add Whatsapp in your Craftcms website.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": ["craft",
+  	"cms",
+  	"craftcms",
+      	"craft-plugin",
+      	"whatsapp"],
+  "license": "MIT",
+  "authors": [
+  	{
+          "name": "Dotsquares",
+          "homepage": "https://dotsquares.com/"
+        }
+  ],
+  "support": {
+    "email": "namita.kaloya@dotsquares.com",
+    "issues": "https://github.com/developer/repo/issues?state=open",
+    "source": "https://github.com/developer/repo",
+    "docs": "https://github.com/developer/repo/blob/master/README.md"
+  },
+  "require": {
+    "craftcms/cms": "^3.7.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "ds\\whatsapp\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Whatsapp Chat",
+    "handle": "whatsapp",
+    "description": "Add whatsapp in your Craftcms Website.",
+    "hasCpSection": false,
+    "hasSettings": true,
+    "class": "ds\\whatsapp\\Whatsapp"
+  }
+}
